@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery it camp</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: #0f172a;
+        font-family: "Poppins" sans-serif;
+      }
+
+      .heading {
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      .gallery1 {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 250px;
+        grid-auto-flow: dense;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 0 auto;
+      }
+
+      /* kanan kiri */
+      .v-stretch {
+        grid-row: span 2;
+      }
+
+      /* ats bawah */
+      .h-stretch {
+        grid-column: span 2;
+      }
+
+      /* combine */
+      .big-stretch {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        border: #fafafa 4px solid;
+      }
+
+      @media (max-width: 560px) {
+        .v-stretch {
+          grid-row: span 1;
+        }
+        .h-stretch {
+          grid-column: span 1;
+        }
+        .big-stretch {
+          grid-row: span 1;
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <h2 class="heading">gallery it camp</h2>
+
+      <div class="gallery1">
+        <div>
+          <img src="/img/it camp/1.jpg" alt="" />
+        </div>
+
+        <div class="v-stretch">
+          <img src="/img/it camp/2.jpg" alt="" />
+        </div>
+
+        <div class="h-stretch">
+          <img src="/img/it camp/3.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/4.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/5.jpg" alt="" />
+        </div>
+
+        <div class="v-stretch">
+          <img src="/img/it camp/6.jpg" alt="" />
+        </div>
+
+        <div class="big-stretch">
+          <img src="/img/it camp/7.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/8.jpg" alt="" />
+        </div>
+
+        <div class="h-stretch">
+          <img src="/img/it camp/9.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/10.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/11.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/12.jpg" alt="" />
+        </div>
+
+        <div class="v-stretch">
+          <img src="/img/it camp/13.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/14.jpg" alt="" />
+        </div>
+
+        <div class="big-stretch">
+          <img src="/img/it camp/15.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/16.jpg" alt="" />
+        </div>
+
+        <div class="h-stretch">
+          <img src="/img/it camp/17.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/18.jpg" alt="" />
+        </div>
+
+        <div class="big-stretch">
+          <img src="/img/it camp/19.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/20.jpg" alt="" />
+        </div>
+
+        <div>
+          <img src="/img/it camp/20.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="btn-NP">
+        <a onclick="goBackIndexItCamp()" class="btn">back</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          copyright &copy; 2023 Kelompok C
+          <span title="terlahir untuk menang">{ Natus Vincere }</span>
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="/style/main.js"></script>
+  </body>
+</html>
